@@ -1,67 +1,59 @@
-/* Full page layout */
-.register-container {
+/* Page layout */
+.login-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background: linear-gradient(135deg, #7d2cd4, #00eaff); /* Sky-blue gradient */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
 }
 
 /* Form box */
-.register-box {
+.login-form {
   background: rgba(255, 255, 255, 0.95);
-  padding: 40px 30px;
+  padding: 35px 30px;
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.2);
   width: 350px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   transition: transform 0.3s ease;
 }
 
-.register-box:hover {
+.login-form:hover {
   transform: translateY(-5px);
 }
 
 /* Title */
-.register-title {
+.login-title {
   font-size: 1.8rem;
-  margin-bottom: 25px;
   color: #333;
-}
-
-/* Labels */
-.register-label {
-  display: block;
-  text-align: left;
-  margin-bottom: 6px;
-  font-weight: 600;
-  color: #444;
-  margin-top: 15px;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 /* Inputs */
-.register-input {
+.login-input {
   width: 100%;
   padding: 12px 15px;
+  margin-bottom: 15px;
   border-radius: 10px;
   border: 1px solid #ccc;
-  margin-bottom: 10px;
   font-size: 1rem;
   transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
-.register-input:focus {
+.login-input:focus {
   border-color: #6a11cb;
   box-shadow: 0 0 8px rgba(106, 17, 203, 0.3);
   outline: none;
 }
 
 /* Button */
-.register-button {
-  width: 100%;
+.login-btn {
   padding: 12px;
-  margin-top: 20px;
   background: #6a11cb;
   color: white;
   font-size: 1.1rem;
@@ -72,7 +64,22 @@
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.register-button:hover {
+.login-btn:hover {
   background: #2575fc;
   transform: translateY(-2px);
+}
+
+/* Forgot password link */
+.forgot-link {
+  margin-top: 15px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.forgot-link:hover {
+  color: #000000;
+  text-decoration: underline;
 }
